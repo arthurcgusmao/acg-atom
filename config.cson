@@ -1,0 +1,9 @@
+"*":
+  core:
+    projectHome: "/home/arthurcgusmao/Projects"
+    telemetryConsent: "no"
+  editor:
+    showLineNumbers: false
+  "exception-reporting":
+    userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
+  "status-bar": {}
