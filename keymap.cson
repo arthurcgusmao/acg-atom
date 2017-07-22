@@ -30,3 +30,71 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.platform-linux':
+    # use only ctrl-p for the fuzzy file finder
+    'ctrl-t': 'unset!'
+    # change project-manager keybindings
+    'alt-shift-P': 'unset!'
+    'ctrl-shift-p': 'project-manager:list-projects'
+    # alt-x for command-palette
+    'alt-x': 'command-palette:toggle'
+
+
+'body':
+    # alt-q for switching tabs and ctrl-tab does traditional behavior
+    'alt-q': 'pane:show-next-recently-used-item'
+    'alt-shift-q': 'pane:show-previous-recently-used-item'
+    'alt-q ^alt': 'pane:move-active-item-to-top-of-stack'
+    'alt-shift-q ^alt': 'pane:move-active-item-to-top-of-stack'
+    'ctrl-tab': 'pane:show-next-item'
+    'ctrl-shift-tab': 'pane:show-previous-item'
+    'ctrl-tab ^ctrl': 'unset!'
+    'ctrl-shift-tab ^ctrl': 'unset!'
+    # developer tools
+    'ctrl-shift-i': 'unset!'
+    'f12': 'window:toggle-dev-tools'
+    # move selection left/right
+    'alt-shift-left': 'unset!'
+    'alt-shift-right': 'unset!'
+    'ctrl-alt-left': 'editor:move-selection-left'
+    'ctrl-alt-right': 'editor:move-selection-right'
+    # disable buttons that may quit without intention
+    'ctrl-q': 'unset!'
+    'ctrl-shift-w': 'unset!'
+
+'atom-text-editor':
+    # expand region
+    'shift-space': 'expand-region:expand'
+    'shift-alt-space': 'expand-region:shrink'
+
+# 'atom-text-editor:not([mini])':
+    # deselect selected text
+    # 'escape': 'custom:deselect-text'
+
+'atom-workspace':
+    # configure atom-terminal package keybindings
+    'ctrl-shift-t': 'unset!'
+    'alt-shift-t': 'unset!'
+    'ctrl-alt-t': 'atom-terminal:open'
+    'ctrl-alt-shift-t': 'atom-terminal:open-project-root'
+
+
+# selection-mode (ctrl-space just like in emacs)
+'atom-workspace atom-text-editor':
+    'ctrl-space': 'selection-mode:toggle'
+'atom-workspace atom-text-editor.editor.selection-mode':
+    'escape': 'selection-mode:cancel'
+
+'atom-workspace atom-text-editor:not([mini])':
+    # move line up/down
+    'ctrl-up': 'unset!'
+    'ctrl-down': 'unset!'
+    'ctrl-alt-up': 'editor:move-line-up'
+    'ctrl-alt-down': 'editor:move-line-down'
+    # fold selected text
+    'ctrl-alt-f': 'editor:fold-selection'
+
+'atom-text-editor:not(mini).autocomplete-active':
+    # Disable Enter key for confirming an autocomplete suggestion
+    'enter': 'editor:newline'

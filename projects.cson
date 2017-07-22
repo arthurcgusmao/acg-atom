@@ -1,0 +1,14 @@
+[
+  {
+    title: "Atom Configuration Files"
+    paths: [
+      "/home/arthurcgusmao/.atom"
+    ]
+  }
+  {
+    title: "Asteroidea"
+    paths: [
+      "/home/arthurcgusmao/Projects/asteroidea"
+    ]
+  }
+]

@@ -9,3 +9,9 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+# deselect current text
+atom.commands.add 'atom-text-editor', 'custom:deselect-text', ->
+  _editor = atom.workspace.getActiveTextEditor()
+  _origin = _editor.getCursorScreenPosition()
+  _editor.setSelectedBufferRange([_origin,_origin])
