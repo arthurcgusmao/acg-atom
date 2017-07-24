@@ -31,6 +31,14 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+    'ctrl-g': 'find-and-replace:find-next'
+    'ctrl-shift-g': 'find-and-replace:find-previous'
+
+'.platform-win32, .platform-linux':
+    # unset ctrl-shift-g to use in find-and-replace
+    'ctrl-shift-g': 'unset!'
+
 '.platform-linux':
     # use only ctrl-p for the fuzzy file finder
     'ctrl-t': 'unset!'
@@ -39,7 +47,9 @@
     'ctrl-shift-p': 'project-manager:list-projects'
     # alt-x for command-palette
     'alt-x': 'command-palette:toggle'
-
+    # change go to line in file from ctrl-g to ctrl-l
+    'ctrl-g': 'unset!'
+    'ctrl-l': 'go-to-line:toggle'
 
 'body':
     # alt-q for switching tabs and ctrl-tab does traditional behavior
@@ -68,9 +78,17 @@
     'shift-space': 'expand-region:expand'
     'shift-alt-space': 'expand-region:shrink'
 
-# 'atom-text-editor:not([mini])':
+'atom-text-editor:not([mini])':
     # deselect selected text
-    # 'escape': 'custom:deselect-text'
+    ## 'escape': 'custom:deselect-text'
+    # unbind default move line up/down
+    # 'ctrl-up': 'unset!'
+    # 'ctrl-down': 'unset!'
+    # setup moving up/down between paragraphs
+    'ctrl-up': 'editor:move-to-beginning-of-previous-paragraph'
+    'ctrl-down': 'editor:move-to-beginning-of-next-paragraph'
+    'shift-ctrl-up': 'editor:select-to-beginning-of-previous-paragraph'
+    'shift-ctrl-down': 'editor:select-to-beginning-of-next-paragraph'
 
 'atom-workspace':
     # configure atom-terminal package keybindings
@@ -79,17 +97,17 @@
     'ctrl-alt-t': 'atom-terminal:open'
     'ctrl-alt-shift-t': 'atom-terminal:open-project-root'
 
-
-# selection-mode (ctrl-space just like in emacs)
 'atom-workspace atom-text-editor':
+    # selection-mode (ctrl-space just like in emacs)
     'ctrl-space': 'selection-mode:toggle'
+    # unset select line
+    'ctrl-l': 'unset!'
 'atom-workspace atom-text-editor.editor.selection-mode':
+    # selection-mode (ctrl-space just like in emacs)
     'escape': 'selection-mode:cancel'
 
 'atom-workspace atom-text-editor:not([mini])':
     # move line up/down
-    'ctrl-up': 'unset!'
-    'ctrl-down': 'unset!'
     'ctrl-alt-up': 'editor:move-line-up'
     'ctrl-alt-down': 'editor:move-line-down'
     # fold selected text

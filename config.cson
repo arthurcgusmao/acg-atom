@@ -9,11 +9,15 @@
     telemetryConsent: "no"
   editor:
     invisibles: {}
+    showIndentGuide: true
     showLineNumbers: false
     tabLength: 4
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
   "expand-region": {}
+  latex:
+    opener: "pdf-view"
+  minimap: {}
   "status-bar": {}
   welcome:
     showOnStartup: false
