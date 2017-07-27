@@ -4,13 +4,23 @@
   core:
     disabledPackages: [
       "jupyter-notebook"
+      "atom-terminal"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "zenburn"
+    ]
   editor:
+    fontSize: 15
     invisibles: {}
+    lineHeight: 1
+    preferredLineLength: 99
+    scrollPastEnd: true
     showIndentGuide: true
-    showLineNumbers: false
+    softWrap: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"

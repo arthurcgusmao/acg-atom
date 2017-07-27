@@ -32,19 +32,29 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+    # ctrl-g for find-and-replace
     'ctrl-g': 'find-and-replace:find-next'
     'ctrl-shift-g': 'find-and-replace:find-previous'
+
+'.platform-linux, .platform-linux .command-palette atom-text-editor':
+    # disable the default command-palette command
+    'ctrl-shift-P': 'unset!'
 
 '.platform-win32, .platform-linux':
     # unset ctrl-shift-g to use in find-and-replace
     'ctrl-shift-g': 'unset!'
+    # disables alt-<key> from toggling the menu bar so now we can bind these keystrokes
+    'alt': 'abort!'
+    'alt-f1': 'window:toggle-menu-bar'
 
 '.platform-linux':
-    # use only ctrl-p for the fuzzy file finder
+    # use only ctrl-o for the fuzzy file finder
     'ctrl-t': 'unset!'
+    'ctrl-p': 'unset!'
+    'ctrl-o': 'fuzzy-finder:toggle-file-finder'
     # change project-manager keybindings
     'alt-shift-P': 'unset!'
-    'ctrl-shift-p': 'project-manager:list-projects'
+    'alt-o': 'project-manager:list-projects'
     # alt-x for command-palette
     'alt-x': 'command-palette:toggle'
     # change go to line in file from ctrl-g to ctrl-l
@@ -52,7 +62,7 @@
     'ctrl-l': 'go-to-line:toggle'
 
 'body':
-    # alt-q for switching tabs and ctrl-tab does traditional behavior
+    # switching tabs: alt-q does switching and ctrl-tab does traditional behavior
     'alt-q': 'pane:show-next-recently-used-item'
     'alt-shift-q': 'pane:show-previous-recently-used-item'
     'alt-q ^alt': 'pane:move-active-item-to-top-of-stack'
@@ -72,6 +82,10 @@
     # disable buttons that may quit without intention
     'ctrl-q': 'unset!'
     'ctrl-shift-w': 'unset!'
+    # opening files and projects
+    'ctrl-o': 'unset!'
+    'ctrl-shift-o': 'application:open-file'
+    'alt-shift-o': 'application:open-folder'
 
 'atom-text-editor':
     # expand region
@@ -89,13 +103,6 @@
     'ctrl-down': 'editor:move-to-beginning-of-next-paragraph'
     'shift-ctrl-up': 'editor:select-to-beginning-of-previous-paragraph'
     'shift-ctrl-down': 'editor:select-to-beginning-of-next-paragraph'
-
-'atom-workspace':
-    # configure atom-terminal package keybindings
-    'ctrl-shift-t': 'unset!'
-    'alt-shift-t': 'unset!'
-    'ctrl-alt-t': 'atom-terminal:open'
-    'ctrl-alt-shift-t': 'atom-terminal:open-project-root'
 
 'atom-workspace atom-text-editor':
     # selection-mode (ctrl-space just like in emacs)

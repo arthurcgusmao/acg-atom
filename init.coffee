@@ -15,3 +15,8 @@ atom.commands.add 'atom-text-editor', 'custom:deselect-text', ->
   _editor = atom.workspace.getActiveTextEditor()
   _origin = _editor.getCursorScreenPosition()
   _editor.setSelectedBufferRange([_origin,_origin])
+
+# disable alt from accessing the menu bar (so we can bind others keys)
+atom.menu.template.forEach (t) ->
+  t.label = t.label.replace("&", "")
+atom.menu.update()

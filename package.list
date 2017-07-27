@@ -1,11 +1,16 @@
 atom-terminal@0.8.0
+duotone-dark-space-syntax@2.1.0
 expand-region@0.3.1
+flatland-dark@0.2.2
 jupyter-notebook@0.0.10
 language-latex@1.0.0
 latex@0.44.0
 latexer@0.3.0
-minimap@4.29.0
+minimap@4.29.2
+open-terminal-here@2.3.1
 pdf-view@0.59.0
+preview-inline@1.4.7
 project-manager@3.3.5
 selection-mode@0.2.1
+zenburn@3.1.0
 
