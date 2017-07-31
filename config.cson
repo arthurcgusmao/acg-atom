@@ -5,6 +5,11 @@
     disabledPackages: [
       "jupyter-notebook"
       "atom-terminal"
+      "language-gfm"
+      "markdown-preview"
+    ]
+    packagesWithKeymapsDisabled: [
+      "markdown-preview-plus"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     telemetryConsent: "no"
@@ -13,20 +18,38 @@
       "zenburn"
     ]
   editor:
-    fontSize: 15
+    fontSize: 17
     invisibles: {}
     lineHeight: 1
     preferredLineLength: 99
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
   "expand-region": {}
   latex:
     opener: "pdf-view"
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    enablePandoc: true
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.html.basic"
+      "text.md"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+    ]
+    pandocArguments: [
+      "--filter=pandoc-eqnos"
+    ]
+    pandocBIBFileFallback: "/home/arthurcgusmao/Documents/zotero.bib"
+    pandocBibliography: true
+    pandocRemoveReferences: false
+    useLazyHeaders: false
   minimap: {}
   "status-bar": {}
   welcome:

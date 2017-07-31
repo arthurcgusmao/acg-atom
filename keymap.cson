@@ -104,6 +104,10 @@
     'shift-ctrl-up': 'editor:select-to-beginning-of-previous-paragraph'
     'shift-ctrl-down': 'editor:select-to-beginning-of-next-paragraph'
 
+'atom-workspace':
+    'ctrl-alt-p': 'unset!'
+    'f6': 'preview-inline:show'
+
 'atom-workspace atom-text-editor':
     # selection-mode (ctrl-space just like in emacs)
     'ctrl-space': 'selection-mode:toggle'
@@ -112,6 +116,9 @@
 'atom-workspace atom-text-editor.editor.selection-mode':
     # selection-mode (ctrl-space just like in emacs)
     'escape': 'selection-mode:cancel'
+
+'atom-workspace, atom-workspace atom-text-editor':
+    'f7': 'markdown-preview-plus:toggle'
 
 'atom-workspace atom-text-editor:not([mini])':
     # move line up/down
