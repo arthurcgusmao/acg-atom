@@ -94,7 +94,7 @@
 
 'atom-text-editor:not([mini])':
     # deselect selected text
-    ## 'escape': 'custom:deselect-text'
+    'escape': 'custom:deselect-text'
     # unbind default move line up/down
     # 'ctrl-up': 'unset!'
     # 'ctrl-down': 'unset!'
@@ -103,6 +103,8 @@
     'ctrl-down': 'editor:move-to-beginning-of-next-paragraph'
     'shift-ctrl-up': 'editor:select-to-beginning-of-previous-paragraph'
     'shift-ctrl-down': 'editor:select-to-beginning-of-next-paragraph'
+    # clipboard-plus keybinding
+    'alt-v': 'clipboard-plus:toggle'
 
 'atom-workspace':
     'ctrl-alt-p': 'unset!'
@@ -110,7 +112,7 @@
 
 'atom-workspace atom-text-editor':
     # selection-mode (ctrl-space just like in emacs)
-    'ctrl-space': 'selection-mode:toggle'
+    'ctrl-space': 'selection-mode:toggle-without-deselecting'
     # unset select line
     'ctrl-l': 'unset!'
 'atom-workspace atom-text-editor.editor.selection-mode':
@@ -130,3 +132,11 @@
 'atom-text-editor:not(mini).autocomplete-active':
     # Disable Enter key for confirming an autocomplete suggestion
     'enter': 'editor:newline'
+
+
+# latex specifics
+'atom-text-editor[data-grammar~="latex"]':
+    'ctrl-alt-b': 'unset!'
+    'ctrl-alt-s': 'unset!'
+    'ctrl-alt-c': 'unset!'
+    'f9': 'latex:build'

@@ -4,21 +4,23 @@
   core:
     disabledPackages: [
       "jupyter-notebook"
-      "atom-terminal"
       "language-gfm"
       "markdown-preview"
+      "Hydrogen"
+      "quick-highlight"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "zenburn"
+      "atom-dark-ui"
+      "acg-syntax"
     ]
   editor:
-    fontSize: 17
+    fontSize: 20
     invisibles: {}
     lineHeight: 1
     preferredLineLength: 99
