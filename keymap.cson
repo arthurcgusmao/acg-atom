@@ -91,10 +91,17 @@
     # expand region
     'shift-space': 'expand-region:expand'
     'shift-alt-space': 'expand-region:shrink'
+    # deleting text and backspacing
+    'ctrl-shift-delete': 'editor:delete-to-end-of-line'
+    'ctrl-shift-backspace': 'editor:delete-to-beginning-of-line'
+    # clear line
+    'shift-backspace': 'custom:clear-line'
 
 'atom-text-editor:not([mini])':
     # deselect selected text
     'escape': 'custom:deselect-text'
+    # join line above
+    'ctrl-shift-j': 'custom:join-line-above'
     # unbind default move line up/down
     # 'ctrl-up': 'unset!'
     # 'ctrl-down': 'unset!'
@@ -129,9 +136,9 @@
     # fold selected text
     'ctrl-alt-f': 'editor:fold-selection'
 
-'atom-text-editor:not(mini).autocomplete-active':
-    # Disable Enter key for confirming an autocomplete suggestion
-    'enter': 'editor:newline'
+# 'atom-text-editor:not(mini).autocomplete-active':
+    # # Disable Enter key for confirming an autocomplete suggestion
+    # 'enter': 'editor:newline'
 
 
 # latex specifics

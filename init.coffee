@@ -24,3 +24,26 @@ atom.commands.add 'atom-text-editor', 'custom:deselect-text', (e) ->
 atom.menu.template.forEach (t) ->
     t.label = t.label.replace("&", "")
 atom.menu.update()
+
+# join line above command
+atom.commands.add 'atom-text-editor', 'custom:join-line-above', (e) ->
+    return unless editor = atom.workspace.getActiveTextEditor()
+    editor.transact ->
+        editor.moveUp()
+        editor.joinLines()
+
+atom.commands.add 'atom-text-editor', 'custom:clear-line', (e) ->
+    return unless editor = atom.workspace.getActiveTextEditor()
+    editor.transact ->
+        editor.deleteLine()
+        editor.insertNewlineAbove()
+
+atom.commands.add 'atom-text-editor', 'custom:shift-enter', (e) ->
+    return unless editor = atom.workspace.getActiveTextEditor()
+    editor.transact ->
+        for selection in editor.getSelections()
+            selection.deleteSelectedText()
+        editor.selectToBeginningOfLine()
+        selectedTexts = []
+        for selection in editor.getSelections()
+            selectedTexts.push(selection.getText())

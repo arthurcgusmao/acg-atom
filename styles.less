@@ -27,10 +27,16 @@ atom-text-editor {
 }
 
 // style UI elements inside atom-text-editor
-atom-text-editor .cursor {
-  // border-color: red;
+atom-text-editor.editor .cursor {
+    top: -0.15em;
+    height: 1.2em !important;
 }
 // Stop cursor blinking
 atom-text-editor.editor .is-focused .cursors .cursor {
-  opacity: 1;
+    opacity: 1;
+}
+// Highlight cursor line
+atom-text-editor .cursor-line {
+    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(255, 255, 255, 0.04);
 }

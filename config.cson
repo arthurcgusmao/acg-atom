@@ -1,4 +1,8 @@
 "*":
+  "autocomplete-bibtex":
+    bibtex: [
+      "/home/arthurcgusmao/Documents/zotero.bib"
+    ]
   "command-palette":
     preserveLastSearch: true
   core:
@@ -6,8 +10,8 @@
       "jupyter-notebook"
       "language-gfm"
       "markdown-preview"
-      "Hydrogen"
       "quick-highlight"
+      "Hydrogen"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
@@ -16,17 +20,18 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
+      "two-light-ui"
       "acg-syntax"
     ]
   editor:
-    fontSize: 20
+    fontSize: 15
     invisibles: {}
-    lineHeight: 1
+    lineHeight: 1.1
     preferredLineLength: 99
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
@@ -52,7 +57,10 @@
     pandocBibliography: true
     pandocRemoveReferences: false
     useLazyHeaders: false
-  minimap: {}
+  minimap:
+    displayMinimapOnLeft: true
+  pigments:
+    markerType: "dot"
   "status-bar": {}
   welcome:
     showOnStartup: false
