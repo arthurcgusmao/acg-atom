@@ -15,6 +15,7 @@
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
+      "latex"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     restorePreviousWindowsOnStart: "no"
@@ -24,7 +25,7 @@
       "acg-syntax"
     ]
   editor:
-    fontSize: 15
+    fontSize: 17
     invisibles: {}
     lineHeight: 1.1
     preferredLineLength: 99
@@ -32,11 +33,14 @@
     showIndentGuide: true
     softWrap: true
     softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
     tabLength: 4
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
   "expand-region": {}
   latex:
+    openResultAfterBuild: false
+    openResultInBackground: false
     opener: "pdf-view"
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
