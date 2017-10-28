@@ -25,10 +25,10 @@
       "acg-syntax"
     ]
   editor:
-    fontSize: 17
+    fontSize: 15
     invisibles: {}
-    lineHeight: 1.1
-    preferredLineLength: 99
+    lineHeight: 1
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
@@ -61,8 +61,7 @@
     pandocBibliography: true
     pandocRemoveReferences: false
     useLazyHeaders: false
-  minimap:
-    displayMinimapOnLeft: true
+  minimap: {}
   pigments:
     markerType: "dot"
   "status-bar": {}
