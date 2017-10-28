@@ -46,6 +46,8 @@
     # disables alt-<key> from toggling the menu bar so now we can bind these keystrokes
     'alt': 'abort!'
     'alt-f1': 'window:toggle-menu-bar'
+    # using command from tree-view to open file in file manager
+    'ctrl-alt-o': 'tree-view:show-current-file-in-file-manager'
 
 '.platform-linux':
     # use only ctrl-o for the fuzzy file finder
