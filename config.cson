@@ -21,7 +21,7 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "two-light-ui"
+      "atom-dark-ui"
       "acg-syntax"
     ]
   editor:
@@ -62,8 +62,7 @@
     pandocRemoveReferences: false
     useLazyHeaders: false
   minimap: {}
-  pigments:
-    markerType: "dot"
+  pigments: {}
   "status-bar": {}
   welcome:
     showOnStartup: false
