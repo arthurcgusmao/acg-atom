@@ -99,6 +99,8 @@
     # clear line
     'shift-backspace': 'custom:clear-line'
 
+
+
 'atom-text-editor:not([mini])':
     # deselect selected text
     'escape': 'custom:deselect-text'
@@ -118,6 +120,7 @@
 'atom-workspace':
     'ctrl-alt-p': 'unset!'
     'f6': 'preview-inline:show'
+
 
 'atom-workspace atom-text-editor':
     # selection-mode (ctrl-space just like in emacs)

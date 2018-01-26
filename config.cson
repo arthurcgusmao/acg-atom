@@ -12,6 +12,7 @@
       "markdown-preview"
       "quick-highlight"
       "Hydrogen"
+      "atom-keyboard-macros"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
@@ -42,6 +43,8 @@
     openResultAfterBuild: false
     openResultInBackground: false
     opener: "pdf-view"
+  "linter-write-good":
+    severityLevel: "Warning"
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
@@ -60,10 +63,13 @@
     pandocBIBFileFallback: "/home/arthurcgusmao/Documents/zotero.bib"
     pandocBibliography: true
     pandocRemoveReferences: false
+    useGitHubStyle: true
     useLazyHeaders: false
   minimap: {}
   pigments: {}
   "status-bar": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace: {}
