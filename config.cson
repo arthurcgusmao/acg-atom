@@ -9,10 +9,11 @@
     disabledPackages: [
       "jupyter-notebook"
       "language-gfm"
-      "markdown-preview"
       "quick-highlight"
       "Hydrogen"
       "atom-keyboard-macros"
+      "markdown-preview-plus"
+      "markdown-preview"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
@@ -45,6 +46,12 @@
     opener: "pdf-view"
   "linter-write-good":
     severityLevel: "Warning"
+  "markdown-preview-enhanced":
+    imageDropAction: "copy to image folder"
+    imageFolderPath: "images"
+    pandocArguments: "--filter=pandoc-fignos, --filter=pandoc-eqnos, --filter=pandoc-citeproc"
+    previewPanePosition: "left"
+    usePandocParser: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
@@ -58,7 +65,7 @@
       "text.tex.latex"
     ]
     pandocArguments: [
-      "--filter=pandoc-eqnos"
+      "--filter=pandoc-fignos"
     ]
     pandocBIBFileFallback: "/home/arthurcgusmao/Documents/zotero.bib"
     pandocBibliography: true
