@@ -18,6 +18,7 @@
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
       "latex"
+      "markdown-preview-enhanced"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     restorePreviousWindowsOnStart: "no"
@@ -47,10 +48,10 @@
   "linter-write-good":
     severityLevel: "Warning"
   "markdown-preview-enhanced":
+    frontMatterRenderingOption: "code block"
     imageDropAction: "copy to image folder"
     imageFolderPath: "images"
     pandocArguments: "--filter=pandoc-fignos, --filter=pandoc-eqnos, --filter=pandoc-citeproc"
-    previewPanePosition: "left"
     usePandocParser: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
