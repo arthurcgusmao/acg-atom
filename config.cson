@@ -48,6 +48,7 @@
   "linter-write-good":
     severityLevel: "Warning"
   "markdown-preview-enhanced":
+    breakOnSingleNewLine: false
     frontMatterRenderingOption: "code block"
     imageDropAction: "copy to image folder"
     imageFolderPath: "images"
