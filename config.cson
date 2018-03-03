@@ -3,6 +3,11 @@
     bibtex: [
       "/home/arthurcgusmao/Documents/zotero.bib"
     ]
+  "autocomplete-plus":
+    enableAutoActivation: false
+  "autocomplete-python":
+    useKite: false
+    useSnippets: "required"
   "command-palette":
     preserveLastSearch: true
   core:
@@ -14,6 +19,7 @@
       "atom-keyboard-macros"
       "markdown-preview-plus"
       "markdown-preview"
+      "autocomplete-python"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
@@ -28,14 +34,13 @@
       "acg-syntax"
     ]
   editor:
-    fontSize: 15
+    fontFamily: "Ubuntu Mono"
+    fontSize: 16
     invisibles: {}
     lineHeight: 1
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
-    softWrap: true
-    softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 4
     tabLength: 4
   "exception-reporting":
@@ -82,3 +87,22 @@
   welcome:
     showOnStartup: false
   whitespace: {}
+".bibtex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
+".latex.log.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".latex.tex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".tex.text":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
