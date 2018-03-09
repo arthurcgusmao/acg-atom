@@ -57,7 +57,7 @@
     frontMatterRenderingOption: "code block"
     imageDropAction: "copy to image folder"
     imageFolderPath: "images"
-    pandocArguments: "--filter=pandoc-fignos, --filter=pandoc-eqnos, --filter=pandoc-citeproc"
+    pandocArguments: "--filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-fignos, --filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-eqnos, --filter=pandoc-citeproc"
     usePandocParser: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
