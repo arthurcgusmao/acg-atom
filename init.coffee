@@ -47,3 +47,15 @@ atom.commands.add 'atom-text-editor', 'custom:shift-enter', (e) ->
         selectedTexts = []
         for selection in editor.getSelections()
             selectedTexts.push(selection.getText())
+
+
+# custom tab behavior
+# atom.commands.add 'atom-text-editor', 'custom:tab-or-autocomplete', (e) ->
+#     return unless editor = atom.workspace.getActiveTextEditor()
+#     editor.transact ->
+#         for selection in editor.getSelections()
+#             selection.deleteSelectedText()
+#         editor.selectToBeginningOfLine()
+#         selectedTexts = []
+#         for selection in editor.getSelections()
+#             selectedTexts.push(selection.getText())
