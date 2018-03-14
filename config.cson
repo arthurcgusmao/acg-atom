@@ -8,6 +8,8 @@
   "autocomplete-python":
     useKite: false
     useSnippets: "required"
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   "command-palette":
     preserveLastSearch: true
   core:

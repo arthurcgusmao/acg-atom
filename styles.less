@@ -37,5 +37,22 @@ atom-text-editor.editor .cursor {
 // Highlight cursor line
 atom-text-editor .cursor-line {
     background-color: rgba(0, 0, 0, 1.0);
-    // background-color: rgba(255, 255, 255, 0.04);
+}
+
+// Make highlight layber be above lines layer,
+// this lets bracket matching appear even with the current line highlighted.
+atom-text-editor .highlights {
+    z-index: 10;
+    .highlight.selection {
+        opacity: 0.4;
+    }
+}
+// Change style of bracket matcher
+atom-text-editor .highlights {
+    .bracket-matcher {
+        border-bottom: 1px solid lime;
+        position: absolute;
+        border: 1px solid rgba(0, 255, 0, 0.7);
+        background-color: rgba(0, 255, 0, 0.3);
+    }
 }
