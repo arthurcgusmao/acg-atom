@@ -10,6 +10,18 @@
 //   editor.onDidSave ->
 //     console.log "Saved! #{editor.getPath()}"
 
+
+// CONFIGS
+
+// disable alt from accessing the menu bar (so we can bind others keys)
+atom.menu.template.forEach(function(t) {
+    return t.label = t.label.replace("&", "");
+});
+atom.menu.update();
+
+
+// COMMANDS
+
 // deselect current text
 atom.commands.add('atom-text-editor', 'custom:deselect-text', function(e) {
     var _editor, i, len, ref, results, selection;
@@ -27,13 +39,7 @@ atom.commands.add('atom-text-editor', 'custom:deselect-text', function(e) {
     return results;
 });
 
-// disable alt from accessing the menu bar (so we can bind others keys)
-atom.menu.template.forEach(function(t) {
-    return t.label = t.label.replace("&", "");
-});
-atom.menu.update();
-
-// join line above command
+// join line above
 atom.commands.add('atom-text-editor', 'custom:join-line-above', function(e) {
     var editor;
     if (!(editor = atom.workspace.getActiveTextEditor())) {
@@ -45,6 +51,7 @@ atom.commands.add('atom-text-editor', 'custom:join-line-above', function(e) {
     });
 });
 
+// clear line
 atom.commands.add('atom-text-editor', 'custom:clear-line', function(e) {
     var editor;
     if (!(editor = atom.workspace.getActiveTextEditor())) {
@@ -56,6 +63,7 @@ atom.commands.add('atom-text-editor', 'custom:clear-line', function(e) {
     });
 });
 
+// shift-enter (open line above)
 atom.commands.add('atom-text-editor', 'custom:shift-enter', function(e) {
     var editor;
     if (!(editor = atom.workspace.getActiveTextEditor())) {
