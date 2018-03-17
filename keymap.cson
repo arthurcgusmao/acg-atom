@@ -98,9 +98,13 @@
     'ctrl-shift-backspace': 'editor:delete-to-beginning-of-line'
     # clear line
     'shift-backspace': 'custom:clear-line'
+    'shift-delete': 'editor:delete-line'
 
     # markdown preview enhanced
     'f8': 'markdown-preview-enhanced:toggle'
+
+    # autocomplete-plus
+    'tab': 'custom:tab-autocomplete'
 
 
 
@@ -145,7 +149,9 @@
 # 'atom-text-editor:not(mini).autocomplete-active':
     # # Disable Enter key for confirming an autocomplete suggestion
     # 'enter': 'editor:newline'
-
+'atom-text-editor.autocomplete-active':
+    'escape': 'autocomplete-plus:cancel'
+    'f1': 'autocomplete-plus:navigate-to-description-more-link'
 
 # latex specifics
 'atom-text-editor[data-grammar~="latex"]':

@@ -9,6 +9,7 @@
 // atom.workspace.observeTextEditors (editor) ->
 //   editor.onDidSave ->
 //     console.log "Saved! #{editor.getPath()}"
+'use babel';
 
 
 // CONFIGS
@@ -90,12 +91,24 @@ atom.commands.add('atom-text-editor', 'custom:shift-enter', function(e) {
 
 
 // custom tab behavior
-// atom.commands.add 'atom-text-editor', 'custom:tab-or-autocomplete', (e) ->
-//     return unless editor = atom.workspace.getActiveTextEditor()
-//     editor.transact ->
-//         for selection in editor.getSelections()
-//             selection.deleteSelectedText()
-//         editor.selectToBeginningOfLine()
-//         selectedTexts = []
-//         for selection in editor.getSelections()
-//             selectedTexts.push(selection.getText())
+atom.commands.add('atom-text-editor', 'custom:tab-autocomplete', function(e) {
+    const editor = atom.workspace.getActiveTextEditor();
+    if (!editor) {
+        return e.abortKeyBinding();
+    } else {
+        const cursors = editor.getCursors();
+        let hasPrecedingCharsFlag = true;
+        for (let cursor of cursors) {
+            console.log(cursor);
+            if (!cursor.hasPrecedingCharactersOnLine()) hasPrecedingCharsFlag = false;
+        }
+        // at this point flag will only be true if all cursors have preceding chars
+        if (hasPrecedingCharsFlag) {
+            editorElement = atom.views.getView(editor);
+            // this can help later: https://atom.io/docs/api/v1.6.0/CommandRegistry#instance-onDidDispatch
+            return atom.commands.dispatch(editorElement, 'autocomplete-plus:activate');
+        } else {
+            return e.abortKeyBinding();
+        }
+    }
+});

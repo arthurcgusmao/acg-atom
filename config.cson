@@ -5,6 +5,7 @@
     ]
   "autocomplete-plus":
     enableAutoActivation: false
+    strictMatching: true
   "autocomplete-python":
     useKite: false
     useSnippets: "required"
@@ -27,6 +28,7 @@
       "markdown-preview-plus"
       "latex"
       "markdown-preview-enhanced"
+      "autocomplete-plus"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     restorePreviousWindowsOnStart: "no"
