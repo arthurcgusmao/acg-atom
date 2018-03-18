@@ -34,19 +34,16 @@ atom-text-editor.editor .cursor {
     // Stop cursor blinking
     opacity: 1 !important;
 }
-// Highlight cursor line
-atom-text-editor .cursor-line {
-    background-color: rgba(0, 0, 0, 1.0);
-}
 
-// Make highlight layber be above lines layer,
-// this lets bracket matching appear even with the current line highlighted.
-atom-text-editor .highlights {
-    z-index: 10;
-    .highlight.selection {
-        opacity: 0.4;
+// highlight cursor line
+atom-text-editor {
+    // The cursor line important to use rgba for opacity, also requires !important
+    // to override any theme.
+    .line.highlight-line {
+        background: rgba(0, 0, 0, 0.4) !important;
     }
 }
+
 // Change style of bracket matcher
 atom-text-editor .highlights {
     .bracket-matcher {

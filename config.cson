@@ -29,12 +29,13 @@
       "latex"
       "markdown-preview-enhanced"
       "autocomplete-plus"
+      "highlight-line"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
+      "one-dark-ui"
       "acg-syntax"
     ]
   editor:
@@ -50,6 +51,10 @@
   "exception-reporting":
     userId: "5f18bbb9-cb73-482c-8f71-217bafc53a12"
   "expand-region": {}
+  "file-icons":
+    coloured: false
+    strategies: {}
+  "highlight-line": {}
   latex:
     openResultAfterBuild: false
     openResultInBackground: false
@@ -85,6 +90,8 @@
     useLazyHeaders: false
   minimap: {}
   pigments: {}
+  "seti-super-compact-ui":
+    disableAnimations: true
   "status-bar": {}
   "tree-view":
     hideVcsIgnoredFiles: true
