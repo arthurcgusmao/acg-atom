@@ -35,8 +35,8 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "acg-syntax"
+      "one-light-ui"
+      "wombat-light-syntax"
     ]
   editor:
     fontFamily: "Ubuntu Mono"
@@ -55,6 +55,7 @@
     coloured: false
     strategies: {}
   "highlight-line": {}
+  "isotope-light-ui": {}
   latex:
     openResultAfterBuild: false
     openResultInBackground: false

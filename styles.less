@@ -20,18 +20,10 @@
   // background-color: whitesmoke;
 }
 
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
-}
-
 // style UI elements inside atom-text-editor
 atom-text-editor.editor .cursor {
-    // top: -0.15em;
-    // height: 1.2em !important;
-    border-left: 2px solid white;
-    // Stop cursor blinking
+    // border-left: 2px solid white;
+    // // Stop cursor blinking
     opacity: 1 !important;
 }
 
@@ -40,7 +32,8 @@ atom-text-editor {
     // The cursor line important to use rgba for opacity, also requires !important
     // to override any theme.
     .line.highlight-line {
-        background: rgba(0, 0, 0, 0.4) !important;
+        // background: rgba(0, 0, 0, 0.4) !important;
+        background: rgba(255, 255, 255, 0.4) !important;
     }
 }
 
