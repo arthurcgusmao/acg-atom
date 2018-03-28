@@ -17,7 +17,6 @@
     disabledPackages: [
       "jupyter-notebook"
       "language-gfm"
-      "quick-highlight"
       "Hydrogen"
       "atom-keyboard-macros"
       "markdown-preview-plus"
@@ -35,8 +34,8 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "wombat-light-syntax"
+      "one-dark-ui"
+      "acg-syntax"
     ]
   editor:
     fontFamily: "Ubuntu Mono"
@@ -56,6 +55,12 @@
     strategies: {}
   "highlight-line": {}
   "isotope-light-ui": {}
+  languagetool:
+    motherTongue: "pt-BR"
+    preferredVariants: [
+      "en-US"
+      "pt-BR"
+    ]
   latex:
     openResultAfterBuild: false
     openResultInBackground: false
@@ -95,7 +100,7 @@
     disableAnimations: true
   "status-bar": {}
   "tree-view":
-    hideVcsIgnoredFiles: true
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
   whitespace: {}
