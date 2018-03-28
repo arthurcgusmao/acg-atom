@@ -47,22 +47,3 @@ atom-text-editor .highlights {
         background-color: rgba(0, 255, 0, 0.3);
     }
 }
-
-// =================================================================
-// customization of quick-highlight package
-
-// define mixin
-.quick-highlight-customize(@name) {
-    atom-text-editor .quick-highlight.@{name} .region {
-        border-bottom-width: 1em;
-        opacity: 0.6;
-    }
-}
-// apply mixin
-.quick-highlight-customize(underline-01);
-.quick-highlight-customize(underline-02);
-.quick-highlight-customize(underline-03);
-.quick-highlight-customize(underline-04);
-.quick-highlight-customize(underline-05);
-.quick-highlight-customize(underline-06);
-.quick-highlight-customize(underline-07);

@@ -146,6 +146,10 @@
     # fold selected text
     'ctrl-alt-f': 'editor:fold-selection'
 
+    # quick-highlight package
+    'alt-h': 'quick-highlight:toggle'
+    'alt-shift-h': 'quick-highlight:clear'
+
 # 'atom-text-editor:not(mini).autocomplete-active':
     # # Disable Enter key for confirming an autocomplete suggestion
     # 'enter': 'editor:newline'

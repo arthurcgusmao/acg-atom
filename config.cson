@@ -96,11 +96,14 @@
     useLazyHeaders: false
   minimap: {}
   pigments: {}
+  "quick-highlight":
+    decorate: "highlight"
   "seti-super-compact-ui":
     disableAnimations: true
   "status-bar": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace: {}
