@@ -35,6 +35,9 @@
     # ctrl-g for find-and-replace
     'ctrl-g': 'find-and-replace:find-next'
     'ctrl-shift-g': 'find-and-replace:find-previous'
+    # to use with macros
+    'f3': 'unset!'
+    'shift-f3': 'unset!'
 
 '.platform-linux, .platform-linux .command-palette atom-text-editor':
     # disable the default command-palette command
@@ -127,6 +130,11 @@
 'atom-workspace':
     'ctrl-alt-p': 'unset!'
     'f6': 'preview-inline:show'
+
+    # macros package
+    'f3': 'atom-keyboard-macros:start_kbd_macro'
+    'f4': 'atom-keyboard-macros:end_kbd_macro'
+    'f5': 'atom-keyboard-macros:call_last_kbd_macro'
 
 
 'atom-workspace atom-text-editor':

@@ -1,4 +1,5 @@
 "*":
+  Hydrogen: {}
   "autocomplete-bibtex":
     bibtex: [
       "/home/arthurcgusmao/Documents/zotero.bib"
@@ -17,11 +18,9 @@
     disabledPackages: [
       "jupyter-notebook"
       "language-gfm"
-      "Hydrogen"
-      "atom-keyboard-macros"
-      "markdown-preview-plus"
       "markdown-preview"
       "autocomplete-python"
+      "Hydrogen"
     ]
     packagesWithKeymapsDisabled: [
       "markdown-preview-plus"
@@ -29,6 +28,7 @@
       "markdown-preview-enhanced"
       "autocomplete-plus"
       "highlight-line"
+      "atom-keyboard-macros"
     ]
     projectHome: "/home/arthurcgusmao/Projects"
     restorePreviousWindowsOnStart: "no"
