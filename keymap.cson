@@ -38,6 +38,9 @@
     # to use with macros
     'f3': 'unset!'
     'shift-f3': 'unset!'
+    # autoflow command (same as fill-paragraph in Emacs)
+    'ctrl-shift-q': 'unset!'
+    'ctrl-p': 'autoflow:reflow-selection'
 
 '.platform-linux, .platform-linux .command-palette atom-text-editor':
     # disable the default command-palette command
