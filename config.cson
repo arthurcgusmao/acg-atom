@@ -37,6 +37,7 @@
       "one-dark-ui"
       "acg-syntax"
     ]
+    warnOnLargeFileLimit: 2
   editor:
     fontFamily: "Ubuntu Mono"
     fontSize: 16
