@@ -35,12 +35,11 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "acg-syntax"
+      "github-atom-dark-syntax"
     ]
     warnOnLargeFileLimit: 2
   editor:
     fontFamily: "Ubuntu Mono"
-    fontSize: 16
     invisibles: {}
     lineHeight: 1
     preferredLineLength: 100
@@ -73,7 +72,7 @@
     frontMatterRenderingOption: "code block"
     imageDropAction: "copy to image folder"
     imageFolderPath: "images"
-    pandocArguments: "--filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-fignos, --filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-eqnos, --filter=pandoc-citeproc"
+    pandocArguments: "--filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-fignos, --filter=/home/arthurcgusmao/.miniconda3/bin/pandoc-eqnos"
     usePandocParser: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
